@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Picker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<canvas id="canv" style="width: 110%; height: 100px; margin: -10px;"></canvas>
+<h3 id="red_val">Red: 0</h3>
+<input onmousedown="fixNums()" onmouseup="endNums()" type="range" min="0" max="255" value="0" id="red" style="width: 256px;"/>
+<h3 id="green_val">Green: 0</h3>
+<input onmousedown="fixNums()" onmouseup="endNums()" type="range" min="0" max="255" value="0" id="green" style="width: 256px;"/>
+<h3 id="blue_val">Blue: 0</h3>
+<input onmousedown="fixNums()" onmouseup="endNums()" type="range" min="0" max="255" value="0" id="blue" style="width: 256px;"/>
+<h1>Color info:</h1>
+<h2 id="hexotp">Hexamedical Color Code: #000000</h2>
+<h2 id="rgbotp">RGB Output: rgb(0, 0, 0)</h2>
+<script src="script.js"></script>
+
+<button type="button" id="myBtn" onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myBtn");
+  x.disabled = true;
+}
+</script>
+</body>
+</html>
